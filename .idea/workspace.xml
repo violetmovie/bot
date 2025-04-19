@@ -30,7 +30,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Norqulov-Sardorbek/kinobot.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/violetmovie/bot.git&quot;,
     &quot;accountId&quot;: &quot;c1ee2104-182d-4092-8cb4-855d44427e70&quot;
   }
 }</component>
@@ -144,7 +144,7 @@
       <workItem from="1744897337455" duration="13752000" />
       <workItem from="1744913238930" duration="3368000" />
       <workItem from="1744943324724" duration="5751000" />
-      <workItem from="1745031116347" duration="926000" />
+      <workItem from="1745031116347" duration="1507000" />
     </task>
     <servers />
   </component>
