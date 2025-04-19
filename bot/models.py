@@ -24,7 +24,7 @@ class VideoInformation(models.Model):
         return self.video_id
 
 class MagicWord(models.Model):
-    word=models.CharField(max_length=255)
+    word=models.CharField(max_length=255,default="admin_parol")
 
     def __str__(self):
         return self.word

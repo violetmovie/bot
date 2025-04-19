@@ -223,7 +223,7 @@ async def handle_caption(message: Message, state: FSMContext) -> None:
     word = MagicWord.objects.filter(id=1).first()
     word.word = message.text
     word.save()
-    await message.answer(text=f"👏🏻 So'z yangilandi. Yangi so'z {message.text}", reply_markup=admin_btn())
+    await message.answer(text=f"👏🏻 So'z yangilandi. Yangi bergan so'z {message.text}", reply_markup=admin_btn())
 
 
 @dp.message(StateFilter(Meassage.caption))
