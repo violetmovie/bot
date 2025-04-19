@@ -12,11 +12,9 @@ bot = Bot(token=TOKEN)
 
 
 async def check_user_subscription(user_id: int) -> bool:
-    results = {}
-    # chat_ids = list(ChannelsToSubscribe.objects.values_list("link", flat=True))
-    chat_ids='1'
+    results = {"342":True}
+    chat_ids = list(ChannelsToSubscribe.objects.values_list("link", flat=True))
     for chat_id in chat_ids:
-        chat_id='@needthingsss'
         try:
             chat_member: ChatMember = await bot.get_chat_member(chat_id=chat_id, user_id=user_id)
             subscribed_statuses = {ChatMemberStatus.MEMBER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.CREATOR}

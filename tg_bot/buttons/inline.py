@@ -3,7 +3,6 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from django.core.paginator import Paginator
 def join_channels():
     channels = ChannelsToSubscribe.objects.all()
-
     buttons = [
         [InlineKeyboardButton(
             text=f"{index+1} - kanal",
