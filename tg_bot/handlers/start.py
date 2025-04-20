@@ -29,7 +29,7 @@ async def chanel_handler(message: Message, state: FSMContext) -> None:
         text = "📢 Kanalni o'chirish uchun usernameni jo'nating: "
         for index, channel in enumerate(chanels):
             text += f"\n{index + 1}. {channel.link}"
-        await message.answer(text=text, parse_mode="Markdown", reply_markup=menu_back())
+        await message.answer(text=text, parse_mode="HTML", reply_markup=menu_back())
         await state.set_state(Meassage.delete_chan_ha)
     else:
         await message.answer(text="❌ Sizda hali qo'shilgan kanallar yo'q", reply_markup=admin_btn())
@@ -50,7 +50,7 @@ async def movie_handler(message: Message, state: FSMContext) -> None:
         text = "📢 Kinoni o'chirish uchun kino kodini jo'nating: "
         for index, video in enumerate(videos):
             text += f"\n{index + 1}. {video.video_number} - {video.video_title}"
-        await message.answer(text=text, parse_mode="Markdown", reply_markup=menu_back())
+        await message.answer(text=text, parse_mode="HTML", reply_markup=menu_back())
         await state.set_state(Meassage.delete_vid_ha)
     else:
         await message.answer(text="❌ Sizda hali qo'shilgan kinolar yo'q", reply_markup=admin_btn())
